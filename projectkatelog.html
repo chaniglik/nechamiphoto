@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectkategor.css">
+    <title>Document</title>
+    <style>
+        #img {
+            width: 430px;
+            height: 310px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgb(194, 124, 124);
+            margin-right: 50px;
+        }
+
+        .ribua {
+            width: 100%;
+            height: 700px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 'r-img1 r-img2 r-img3 '
+                'r-img4 r-img5 r-img6 '
+            ;
+            margin-top: 40px;
+        }
+
+        .r-img1 {
+            grid-area: r-img1;
+        }
+
+        .r-img2 {
+            grid-area: r-img2;
+        }
+
+        .r-img3 {
+            grid-area: r-img3;
+        }
+
+        .r-img4 {
+            grid-area: r-img4;
+        }
+
+        .r-img5 {
+            grid-area: r-img5;
+        }
+
+        .r-img6 {
+            grid-area: r-img6;
+        }
+
+        .ribua {
+            grid-area: ribua;
+        }
+
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bg-text {
+            border: none;
+            background-color: rgb(194, 124, 124, 0.5);
+            border: 2px solid rgb(194, 124, 124);
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 2%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 15px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .bg-text:hover {
+            border: none;
+        }
+
+        @media only screen and (max-width:1000px) {
+            .ribua {
+                width: 100%;
+                display: grid;
+                grid-template-rows: repeat(1fr, 3);
+                grid-template-areas: 'r-img1 r-img2' 'r-img3 r-img4' 'r-img5 r-img6';
+                gap: 20px;
+
+
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            .ribua {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(1fr, 6);
+                grid-template-areas: 'r-img1' 'r-img2' 'r-img3' 'r-img4' 'r-img5' 'r-img6';
+                gap: 20px;
+
+            }
+        }
+        @media only screen and (max-width:480px) {
+            .ribua {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(1fr, 6);
+                grid-template-areas: 'r-img1' 'r-img2' 'r-img3' 'r-img4' 'r-img5' 'r-img6';
+                gap: 20px;
+                grid-template-columns: 1fr;
+                margin-bottom: 1200px;
+            }
+            #img{
+      width: 363px;
+      height: 250px;
+      border-radius: 20px;
+
+      box-shadow: 0 4px 8px 0 rgb(194, 124, 124);
+      margin-right: 12%;    }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- <img src="לבן רקע שקוף.png" alt="" width="200px" height="200px" id="imglogo"> -->
+
+        <a href="index.html">
+            <div id="a">דף הבית</div>
+        </a>
+        <a href="projectbelog.html">
+            <div id="b">בלוג</div>
+        </a>
+        <div class="dropdown">
+            <button class="dropbtn">גלריה</button>
+            <div class="dropdown-content">
+                <a href="projectchutz.html">חוץ</a>
+                <a href="projectstudio.html">סטודיו</a>
+                <a href="projectnew.html">ניו בורן</a>
+                <a href="projectalbum.html">אלבומים</a>
+                <a href="projectfood.html">חלאקה</a>
+                <a href="projectsmash.html">סמאשקייק</a>
+            </div>
+        </div>
+        <a href="projectconect.html">
+            <div id="d">צור קשר</div>
+        </a>
+        <img src="לוגו נחמי לבן.png.png" alt="" width="80px" height="65px" style="margin-top: 10px;" id="imglogo">
+    </div>
+    <div class="ribua">
+        <div class="r-img4">
+          <div class="container">
+            <img data-aos="zoom-in" src="albums/DS8A4318 5.jpg" alt="" id="img">
+            <a href="projectalbum.html"><button class="bg-text">אלבומים</button></a>
+          </div>
+        </div>
+        <div class="r-img2">
+          <div class="container">
+            <img data-aos="zoom-in" src="smush/IMG_9775 copy.jpg" alt="" id="img">
+            <a href="projectsmash.html"><button class="bg-text">סמאשקייק</button>
+          </div></a>
+        </div>
+        <div class="r-img3">
+          <div class="container">
+            <img data-aos="zoom-in" src="studio/IMG_9580 copy.jpg" alt="" id="img">
+            <a href="projectstudio.html"><button class="bg-text">סטודיו</button>
+          </div></a>
+        </div>
+        <div class="r-img1">
+          <div class="container">
+            <img data-aos="zoom-in" src="newborn/IMG_7047 copy (1).jpg" alt="" id="img">
+            <a href="projectnew.html"><button class="bg-text">ניו בורן</button>
+          </div></a>
+        </div>
+        <div class="r-img6">
+          <div class="container">
+            <img data-aos="zoom-in" src="chalake/IMG_6142-Recovered copy.jpg" alt="" id="img">
+            <a href="projectchutz.html"><button class="bg-text">חוץ</button>
+          </div></a>
+        </div>
+        <div class="r-img">
+          <div class="container">
+            <img data-aos="zoom-in" src="chalake/IMG_8881 copy.jpgעיבוד שמיים תכלת copy.jpg" alt="" id="img">
+            <a href="projectfood.html"><button class="bg-text">חלאקה</button>
+          </div></a>
+        </div>
+      </div>
+
+</body>
+
+</html>

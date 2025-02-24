@@ -1,0 +1,332 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectkategor.css">
+    <title>Document</title>
+    
+    <style>
+      
+      body,html{
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  background-image: url("allc/IMG_5515 copy.jpg22.jpg");
+  min-height: 700px; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-left: 0;
+}
+.container:hover{
+  text-decoration-line:none ;
+}
+
+.container {
+  position: absolute;
+  right: 0;
+ 
+  max-width: 600px;
+  padding: 16px;
+  background-color:rgb(194, 124, 124,0.55) ;
+ width: 700px;
+ height:700px;
+ margin-bottom: 0;
+}
+
+
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  
+}
+
+
+.btn {
+  background-color: rgb(194, 124, 124);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  margin-top: 27px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+* {
+  box-sizing: border-box;
+}
+.columns {
+  float: left;
+  width: 30%;
+  padding: 8px;
+ 
+  
+}
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.price .grey {
+  background-color: rgb(194, 124, 124);
+  font-size: 20px;
+}
+
+
+.button {
+  background-color: rgb(194, 124, 124);
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+#conect{
+  width: 500px;
+  margin: auto;
+}
+
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+      <img src="לבן רקע שקוף.png" alt="" width="200px" height="200px" id="imglogo">
+
+      <a href="index.html"><div>דף הבית</div></a>
+      <a href="projectbelog.html"><div>בלוג</div></a>
+      <a href="projectkatelog.html"><div>גלריה</div></a>
+      <a href="projectconect.html"><div>צור קשר</div></a>
+    </div>
+    <div class="bg-img">
+      <form action="projectfinish.html" class="container">
+        <div id="conect">
+        <h1>התחברות</h1>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <label for=""><b>פלאפון</b></label>
+        <input type="text" placeholder="Enter phone" name="num" required>
+        <label for="name"><b>שם מלא</b></label>
+        <input type="text" placeholder="Enter full name" name="name" required>
+        <label for="request"><b>בקשה מיוחדת</b></label>
+        <input type="text" placeholder="Enter request" name="request" required>
+        <label for=""><b>אזור צילום</b></label>
+        <input type="text" placeholder="Enter area" name="area" required>
+        <a href="projectfinish.html"><button type="submit" class="btn" onclick="sendEmail()">התחברות</button></a>
+      </div>
+      </form>
+    </div>
+    <script>
+      function sendEmail() {
+        // Place your email sending logic here
+        // This can include calling the Nodemailer function to send emails
+      }
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectkategor.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <title>Contact Form</title>
+    <style>
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bg-img {
+            
+            background-image: url("allc//Untitled-1\ \(1\).jpg");
+            min-height: 700px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            margin-left: 0;
+        }
+
+        .container {
+            position: absolute;
+            right: 0;
+            max-width: 600px;
+            padding: 16px;
+            background-color: rgba(194, 124, 124, 0.55);
+            width: 700px;
+            height: 700px;
+            margin-bottom: 0;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        button[type="submit"] {
+            background-color: #506252;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        button[type="submit"]:hover {
+            opacity: 1;
+        }
+
+        .main a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #imglogo {
+            width: 200px;
+            height: 200px;
+        }
+
+        .main {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #imglogo {
+    width: 80px;  /* מגדיר את רוחב הלוגו ל-50 פיקסלים */
+    height: 65px; /* מגדיר את הגובה ל-50 פיקסלים */
+    }
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+                height: auto;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .container {
+                width: 100%;
+                height: auto;
+            }
+            .bg-img {
+            
+            background-image: url("chalake/IMG_0529\ copy.jpg");
+          
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <a href="index.html"><div>דף הבית</div></a>
+        <a href="projectbelog.html"><div>בלוג</div></a>
+        <a href="projectkatelog.html"><div>גלריה</div></a>
+        <a href="projectconect.html"><div>צור קשר</div></a>
+        <img src="לוגו נחמי לבן.png.png" alt="" width="20px" height="20px" style="margin-top: 10px;" id="imglogo">
+
+    </div>
+
+    <div class="bg-img">
+        <form id="contact-form" class="container">
+            <h1 >להגשמת חלום</h1>
+            <label for="email"><b>Email</b></label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required >
+            <label for="phone"><b>פלאפון</b></label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Phone" required style="direction: rtl;">
+            <label for="name"><b>שם מלא</b></label>
+            <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+            <label for="request"><b>בקשה מיוחדת</b></label>
+            <input type="text" id="request" name="request" placeholder="Enter Request" required>
+            <label for="area"><b>אזור צילום</b></label>
+            <input type="text" id="area" name="area" placeholder="Enter Area" required>
+            <button type="submit"> נהיה בקשר</button>
+        </form>
+    </div>
+
+    <script>
+        emailjs.init("vrp4sDWEOmuRY1Cbv");  // הכנס את המפתח הציבורי שלך כאן
+
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            const formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                phone: document.getElementById("phone").value,
+                request: document.getElementById("request").value,
+                area: document.getElementById("area").value
+            };
+            
+            emailjs.send("service_kjr1gji", "template_rt0qx1i", formData)
+                .then(function(response) {
+                    alert("Email sent successfully!");
+                }, function(error) {
+                    alert("Failed to send email: " + error.text);
+                });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectkategor.css">
+    <title>Document</title>
+    <style>
+        .row{
+            margin-top: 50px;
+        }
+        #belog1{
+            height: 300px;
+            border-radius:top ;
+        }
+        h2{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(194, 124, 124);
+        }
+        .column {
+      float: left;
+      width: 30%;
+      margin-bottom: 16px;
+      
+      margin-left: 40px;
+    
+    }
+
+   
+
+    .card {
+      box-shadow: 0 4px 8px 0 #506252;
+      height: 550px;
+      border-radius: 20px;
+      
+    }
+
+    .container1 {
+      padding: 0 16px;
+    }
+
+    .container1::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+    p{
+        font-size:large;
+color:#506252 ;
+font-weight: 130px;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
+
+    }
+    #imglogo{
+  margin-top: -50px;
+}
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+/* max-width: 1000px; */
+position: relative;
+margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: #506252;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+left: 0;
+border-radius: 3px 0 0 3px;
+}
+.prev{
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+background-color: rgb(194, 124, 124,0.3);
+width: 4px;
+} */
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #506252;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: rgb(194, 124, 124,0.4);
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+@media(max-width: 1400px) {
+      .column {
+        width: 30%;
+        height: 100%;
+      }
+    } 
+@media(max-width: 1200px) {
+      .column {
+        width: 50%;
+        margin-left: 280px;
+      }
+    }
+    @media(max-width: 500px) {
+      .column {
+        width: 100%;
+        margin-left: -3px;
+      }
+    }
+    
+        @media(max-width: 480px) {
+          .mySlides{
+        width: 95%;
+        margin: auto;
+      }
+      #belog1{
+          height: 20%;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+      <!-- <img src="לבן רקע שקוף.png" alt="" width="200px" height="200px" id="imglogo"> -->
+        <a href="index.html"><div>דף הבית</div></a>
+        <a href="projectbelog.html"><div>בלוג</div></a>
+        <a href="projectkatelog.html"><div>גלריה</div></a>
+        <a href="projectconect.html"><div>צור קשר</div></a>
+        <img src="לוגו נחמי לבן.png.png" alt="" width="80px" height="65px" style="margin-top: 10px;" id="imglogo">
+
+           </div>
+           
+           
+        </div>
+      
+            
+            
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides">
+              <div class="numbertext"></div>
+              <div class="row">
+                <div class="column">
+                  <div class="card">
+                  
+                    <div class="container1">
+                      <h2>מינדי פורייס</h2>
+                      <p class="title"></p>
+                      <p>וואי איזה כיף נחמי , בדיוק היום שלחתי את התמונות שעשית לי לכמה חברות שביקשו ולא גמרו להתלהב.
+נהנתי ברמות על מהשירות שלך, היתה אווירה כיפית עם כל האנרגיה שלך, היתה לנו חוויה פשוט נדירה!
+והתמונות, אני לא יודעת מאיפה להתחיל.
+כל תמונה יותר מיוחדת מהשניה, לא חשבתי שיצאו כאלו תמונות, ואני אחת שמאוד חשוב לה תמונות יפות.
+בקיצור, אין עלייך, ממליצה לכל אחת ואחת והעיקר תמשיכי להצליח!!!</p>
+<img src="studio/IMG_9580 copy.jpg" alt="" style="width:100%; height:80%; margin-bottom: 1px;padding: 0px;"  id="belog1">
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="column">
+                  <div class="card">
+                    <div class="container1">
+                      <h2> מרגלית דמרי</h2>
+                     
+                      <p>נחמי המדהימה!
+                        היתה לנו חוויה משפחתית,
+                        להצטלם אצלך עם הילד חלאקה.
+                        היחס, השירות, החביבות.
+                        אכפתיות שיצא מושלם.
+                        כל תמונה אצלך -פוסטר
+                        
+                        נהננו מאוד 
+                        תצליחי עוד ועוד.
+                        
+                      </p>
+                      <img src="chalake/IMG_5239 copy 2.jpg" alt="Mike" style="width:100%; margin-top: 70px;" id="belog1">
+
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="column">
+                  <div class="card">
+                    <div class="container1">
+                      <h2>מרים בלוי</h2>
+                      <p>נהניתי ממך ברמות אחרות!
+                        קודם כל הגישה המדהימה שלך לילדים, הסבלנות, הצחוק, הכיף והזרימה.
+                        והתמונות שלך בליגה אחרת! עיבוד מושלם, טבעי ואמיתי.
+                        הילדים נהנים להסתכל שוב ושוב בתמונות ולספר מה אמרת להם, איך קפצת או הצחקת אותם.
+                        הצילום היה שעה של חוויה אמיתית, גם להם וגם לי.</p>
+                        <img src="allc/תמונה copy.jpg" alt="John" style="width:100%;margin-top: 20px;" id="belog1">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <div class="container1">
+                      <h2>חוי ס</h2>
+                      <p>נחמי את צלמת ענקית!!!
+                        המקצועיות שלך מוכיחה את עצמה בכל תמונה ותמונה שלך!!!
+                        התמונות שאת מוציאה מרהיבות עין, חדות ויפהפיות עם הרבה סטייל ושיק!!!
+                        
+                        החוויה להצטלם אצלך היא מדהימה, עם ככ הרבה כיף והומור עם הילדים!!!
+                        ממש נהננו מעצם החוויה!!!
+                        
+                        מאחלת לך מכל הלב הרבה הרבה הצלחה בהמשך!!!</p>
+                        <img src="chutz/IMG_6167 copy 3.jpg" alt="John" style="width:100%;margin-top: 25px;" id="belog1">
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="container1">
+                      <h2>מירי אמסטרדם</h2>
+                      <p>נחמי הצלמת המדהימה! 📸✨
+                        אין לנו מספיק מילים להודות לך על החוויה המדהימה! תודה על הסבלנות האינסופית, על האווירה החמה והקלילה, ועל רגעים מלאי צחוק ושמחה. את מביאה איתך קסם מיוחד לכל צילום, ויודעת להפוך כל רגע לתמונה מושלמת.
+                        המקצועיות שלך ניכרת בכל שלב – מהצילום עצמו, דרך העיבוד המדויק ועד לאלבום המרהיב שמספר את הסיפור שלנו בצורה הכי יפה שיש.
+                        לא יכולים לחכות לסשן הצילומים הבא איתך!</p>
+                        <img src="studio/IMG_5069 copy.jpg" alt="John" style="width:91%;;height:7%;margin-top: 0px;" id="belog1">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="container1">
+                      <h2>בר רבקה זק</h2>
+                      <p>נחמי יקרה!!
+                        התמונות שלך משמשות לנו לנחת עד היום ! 
+                        היית מצחיקה ולבבית ויצאנו עם חויה נהדרת-שזה חשוב לא פחות מהתמונות!
+                        אלופה!</p>
+                        <img src="chutz/IMG_0913 copy2.jpg" alt="John" style="width:100%;margin-top: 95px;" id="belog1">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+            
+            <!-- <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <div class="row">
+              <div class="column">
+                <div class="card">
+                  <img src="allc/מוקטן H (5).jpg" alt="John" style="width:100%" id="belog1">
+                  <div class="container1">
+                    <h2>יעל</h2>
+                    <p>תודה יעל את נדירה המקצועית שלך זה אמאלהה הצלחת להוציא איתו תמונות נדירות הצלחת להוציא אותי הכי מרוצה
+                      בעולם. תמונות עוצרות נשימה והשירות שלך נדיר  מאושרת שבחרתי בך תודה אהובה </p>
+        
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <img src="allc/NBR00138 copy.jpg" alt="John" style="width:100%" id="belog1">
+                  <div class="container1">
+                    <h2>שרית</h2>
+                    <p>תודה יעל את נדירה המקצועית שלך זה אמאלהה הצלחת להוציא איתו תמונות נדירות הצלחת להוציא אותי הכי מרוצה
+                      בעולם. תמונות עוצרות נשימה והשירות שלך נדיר  מאושרת שבחרתי בך תודה אהובה </p>
+        
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <img src="allc/NBR03503 copy.jpg" alt="John" style="width:100%" id="belog1">
+                  <div class="container1">
+                    <h2>שולמית</h2>
+                    <p>תודה יעל את נדירה המקצועית שלך זה אמאלהה הצלחת להוציא איתו תמונות נדירות הצלחת להוציא אותי הכי מרוצה
+                      בעולם. תמונות עוצרות נשימה והשירות שלך נדיר  מאושרת שבחרתי בך תודה אהובה </p>
+        
+                  </div> -->
+                <!-- </div> -->
+              <!-- </div> -->
+            </div>
+         
+            </div>
+            
+           
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            
+            <script>
+
+              // let slideIndex = 0;
+              // showSlides();
+              
+              // function showSlides() {
+              //   let i;
+              //   let slides = document.getElementsByClassName("mySlides");
+              //   for (i = 0; i < slides.length; i++) {
+              //     slides[i].style.display = "none";
+              //   }
+              //   slideIndex++;
+              //   if (slideIndex > slides.length) {slideIndex = 1}
+              //   slides[slideIndex-1].style.display = "block";
+              //   setTimeout(showSlides, 3000);
+              // }
+              let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+              
+              </script> 
+              
+</body>
+</html>
